@@ -13,7 +13,7 @@ with DAG(
     default_args={'retries': 2,'retry_delay': timedelta(minutes=5)},
     
     # [END default_args]
-    description='Sensor Fault Detection',
+    description='Smoke Detection',
     schedule_interval="@hourly",
     start_date=pendulum.datetime(2023, 12, 27, tz="UTC"),
     catchup=False,
