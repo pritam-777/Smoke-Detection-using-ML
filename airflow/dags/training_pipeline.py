@@ -15,7 +15,7 @@ with DAG(
     # [END default_args]
     description='Smoke Detection',
     schedule_interval="@hourly",
-    start_date=pendulum.datetime(2023, 12, 27, tz="UTC"),
+    start_date=pendulum.datetime(2023, 5, 11, tz="UTC"),
     catchup=False,
     tags=['example'],
 ) as dag:
