@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 class DataIngestion:
     def __init__(self,data_ingestion_config:config_entity.DataIngestionConfig) -> None:
         try:
+            logging.info(f"{'>>'*20} Data Ingestion {'<<'*20}")
             self.data_ingestion_config = data_ingestion_config
         except Exception as e:
             raise SmokeException
@@ -55,6 +56,7 @@ class DataIngestion:
 
             )
             logging.info(f"Data ingestion artifact: {data_ingestion_artifact}")
+            logging.info(f"{'>>'*20} Data Ingestion Artifact {'<<'*20}")
             return data_ingestion_artifact
             
 

@@ -157,6 +157,7 @@ class DataValidation:
 
             data_validation_artifact = artifact_entity.DataValidationArtifact(report_file_path=self.data_validation_config.report_file_path,)
             logging.info(f"Data validation artifact: {data_validation_artifact}")
+            logging.info(f"{'>>'*20} Data Validation Artifact {'<<'*20}")
             return data_validation_artifact
         except Exception as e:
             raise SmokeException(e, sys)

@@ -105,6 +105,7 @@ class DataTransformation:
             )
 
             logging.info(f"Data transformation object {data_transformation_artifact}")
+            logging.info(f"{'>>'*20} Data Transformation Artifact{'<<'*20}")
             return data_transformation_artifact
         except Exception as e:
             raise SmokeException(e, sys)
