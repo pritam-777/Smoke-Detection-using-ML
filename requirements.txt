@@ -12,7 +12,6 @@ uvicorn
 watchfiles
 websockets
 wincertstore
-xgboost
 pandas
 PyYAML
 numpy
