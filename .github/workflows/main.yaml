@@ -1,4 +1,4 @@
-name: smoke-detection-workflow
+name: fault-detection-workflow
 
 on:
   push:
